@@ -1,0 +1,22 @@
+.DS_Store
+**/.DS_Store
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime data and backups
+data/
+backups/
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs and caches
+*.log
+__pycache__/
+.pytest_cache/
+node_modules/

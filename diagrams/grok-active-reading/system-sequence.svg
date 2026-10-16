@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 3296">
+  <title>&#x4E3B;&#x52A8;&#x9605;&#x8BFB;&#x4EA7;&#x54C1;&#x53CC;&#x6D41;&#x7A0B;&#x65F6;&#x5E8F;&#x56FE; Grok Bot &#x7248;</title>
+  <desc>&#x7EC4;&#x4EF6;&#x5904;&#x7406;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#xFF0C;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x5E93;&#x3001;Grok Bot &#x548C; FSRS &#x80FD;&#x529B;&#x3002;&#x5185;&#x5BB9;&#x7531;&#x5361;&#x7247;&#x96C6;&#x548C;&#x5185;&#x5BB9;&#x5361;&#x7247;&#x7EC4;&#x7EC7;&#xFF0C;&#x95EE;&#x7B54;&#x5361;&#x652F;&#x6301;&#x95EE;&#x7B54;&#x5F0F;&#x548C;&#x9009;&#x62E9;&#x9898;&#x3002;</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width=".5"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-open" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polyline points="0 0,10 3.5,0 7" fill="none" stroke="#64748b" stroke-width="1.5"/>
+    </marker>
+    <marker id="arrow-rose" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" fill="#fb7185"/>
+    </marker>
+  </defs>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+text{font-family:'JetBrains Mono','Noto Sans SC','PingFang SC',sans-serif;fill:#e2e8f0}
+.title{font-size:20px;font-weight:700}.sub{font-size:10px;fill:#94a3b8}.actor{font-size:11px;font-weight:600;text-anchor:middle}
+.phase{font-size:13px;font-weight:700;fill:#fbbf24}.msg{font-size:9px;text-anchor:middle}.num{font-size:7px;font-weight:700;text-anchor:middle;fill:#93c5fd}
+.note{font-size:9px;fill:#cbd5e1}
+</style>
+  <rect width="1200" height="3296" fill="#0f172a"/>
+  <rect width="1200" height="3296" fill="url(#grid)"/>
+  <text x="28" y="32" class="title">&#x4E3B;&#x52A8;&#x9605;&#x8BFB;&#x4EA7;&#x54C1; &#xB7; &#x7EC4;&#x4EF6;&#x4E0E;&#x670D;&#x52A1;&#x65F6;&#x5E8F;&#xFF08;Grok Bot &#x7248;&#xFF09;</text>
+  <text x="28" y="51" class="sub">&#x5185;&#x5BB9;&#x6A21;&#x578B;&#xFF1A;CardSet &#x2192; ContentCard &#x2192; KnowledgeNote &#x2192; ReviewCard&#xFF08;qa / choice&#xFF09;</text>
+  <line x1="110" y1="112" x2="110" y2="3206" stroke="#334155" stroke-width="1" stroke-dasharray="6 5"/>
+  <line x1="310" y1="112" x2="310" y2="3206" stroke="#334155" stroke-width="1" stroke-dasharray="6 5"/>
+  <line x1="510" y1="112" x2="510" y2="3206" stroke="#334155" stroke-width="1" stroke-dasharray="6 5"/>
+  <line x1="710" y1="112" x2="710" y2="3206" stroke="#334155" stroke-width="1" stroke-dasharray="6 5"/>
+  <line x1="910" y1="112" x2="910" y2="3206" stroke="#334155" stroke-width="1" stroke-dasharray="6 5"/>
+  <line x1="1090" y1="112" x2="1090" y2="3206" stroke="#334155" stroke-width="1" stroke-dasharray="6 5"/>
+  <rect x="25" y="126" width="1150" height="34" rx="5" fill="rgba(30,41,59,0.9)" stroke="#475569"/>
+  <text x="45" y="148" class="phase">01  &#x516C;&#x5171;&#x5165;&#x53E3;&#xFF1A;&#x5185;&#x5BB9;&#x5361;&#x7247; &#x2192; &#x751F;&#x6210;&#x8349;&#x7A3F; &#x2192; &#x7528;&#x6237;&#x786E;&#x8BA4;</text>
+  <circle cx="124" cy="198" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="201" class="num">1</text>
+  <line x1="110" y1="198" x2="310" y2="198" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="176" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="188" class="msg">手动录入 / 读取微信读书笔记</text>
+  <circle cx="324" cy="241" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="244" class="num">2</text>
+  <line x1="310" y1="241" x2="510" y2="241" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="219" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="231" class="msg">去重并保存 ContentCard 版本</text>
+  <circle cx="324" cy="284" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="287" class="num">3</text>
+  <line x1="310" y1="284" x2="710" y2="284" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="262" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="274" class="msg">&#x8BF7;&#x6C42;&#x751F;&#x6210;&#x5B66;&#x4E60;&#x6750;&#x6599;</text>
+  <circle cx="724" cy="327" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="724" y="330" class="num">4</text>
+  <line x1="710" y1="327" x2="910" y2="327" stroke="#fbbf24" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="730" y="305" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="810" y="317" class="msg">&#x52A0;&#x8F7D;&#x51FA;&#x9898;&#x4E0E;&#x6765;&#x6E90;&#x7EA6;&#x675F;</text>
+  <circle cx="896" cy="370" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="896" y="373" class="num">5</text>
+  <line x1="910" y1="370" x2="710" y2="370" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="730" y="348" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="810" y="360" class="msg">&#x8FD4;&#x56DE;&#x7ED3;&#x6784;&#x548C;&#x8D28;&#x91CF;&#x89C4;&#x5219;</text>
+  <circle cx="696" cy="413" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="416" class="num">6</text>
+  <line x1="710" y1="413" x2="310" y2="413" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="391" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="403" class="msg">&#x6982;&#x5FF5;&#x3001;&#x4E24;&#x7C7B;&#x95EE;&#x7B54;&#x5361;&#x3001;&#x5F00;&#x653E;&#x9898;&#x3001;&#x6458;&#x8981;&#x53CA;&#x6765;&#x6E90;</text>
+  <circle cx="324" cy="456" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="459" class="num">7</text>
+  <line x1="310" y1="456" x2="510" y2="456" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="434" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="446" class="msg">&#x6821;&#x9A8C;&#x540E;&#x4FDD;&#x5B58;&#x8349;&#x7A3F;&#xFF0C;&#x9690;&#x85CF;&#x7B54;&#x6848;</text>
+  <circle cx="296" cy="499" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="502" class="num">8</text>
+  <line x1="310" y1="499" x2="110" y2="499" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="477" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="489" class="msg">&#x5C55;&#x793A;&#x8349;&#x7A3F;&#x4F9B;&#x5BA1;&#x6838;</text>
+  <circle cx="124" cy="542" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="545" class="num">9</text>
+  <line x1="110" y1="542" x2="310" y2="542" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="520" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="532" class="msg">&#x7F16;&#x8F91;&#x5E76;&#x786E;&#x8BA4;&#x53D1;&#x5E03;</text>
+  <circle cx="324" cy="585" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="588" class="num">10</text>
+  <line x1="310" y1="585" x2="510" y2="585" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="563" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="575" class="msg">&#x53D1;&#x5E03;&#x95EE;&#x7B54;&#x5361;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x5B66;&#x4E60;&#x72B6;&#x6001;</text>
+  <rect x="25" y="632" width="1150" height="34" rx="5" fill="rgba(30,41,59,0.9)" stroke="#475569"/>
+  <text x="45" y="654" class="phase">02  &#x72EC;&#x7ACB;&#x6D41;&#x7A0B; A&#xFF1A;&#x4E3B;&#x52A8;&#x56DE;&#x60F3; &#x2192; &#x7528;&#x6237;&#x8BC4;&#x5206; &#x2192; FSRS &#x6392;&#x671F;&#xFF08;&#x65E5;&#x5E38;&#x9AD8;&#x9891;&#xFF09;</text>
+  <circle cx="124" cy="704" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="707" class="num">11</text>
+  <line x1="110" y1="704" x2="310" y2="704" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="682" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="694" class="msg">&#x9009;&#x62E9;&#x201C;&#x95EE;&#x7B54;&#x5361;&#x590D;&#x4E60;&#x201D;</text>
+  <circle cx="324" cy="747" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="750" class="num">12</text>
+  <line x1="310" y1="747" x2="510" y2="747" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="725" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="737" class="msg">&#x67E5;&#x8BE2;&#x5230;&#x671F;&#x3001;&#x903E;&#x671F;&#x3001;&#x5B66;&#x4E60;&#x4E2D;&#x548C;&#x65B0;&#x95EE;&#x7B54;&#x5361;</text>
+  <circle cx="496" cy="790" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="496" y="793" class="num">13</text>
+  <line x1="510" y1="790" x2="310" y2="790" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="768" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="780" class="msg">排除失效、作废、暂停与暂缓项</text>
+  <circle cx="296" cy="833" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="836" class="num">14</text>
+  <line x1="310" y1="833" x2="110" y2="833" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="811" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="823" class="msg">&#x6309;&#x9898;&#x578B;&#x5C55;&#x793A;&#xFF1A;&#x6587;&#x672C;&#x8F93;&#x5165;&#x6216;&#x9009;&#x62E9;&#x9898;&#x9009;&#x9879;</text>
+  <circle cx="124" cy="876" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="879" class="num">15</text>
+  <line x1="110" y1="876" x2="310" y2="876" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="854" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="866" class="msg">&#x63D0;&#x4EA4;&#x56DE;&#x7B54;&#x6587;&#x672C;&#x3001;&#x6240;&#x9009;&#x9009;&#x9879;&#x6216;&#x201C;&#x60F3;&#x4E0D;&#x8D77;&#x6765;&#x201D;</text>
+  <circle cx="324" cy="919" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="922" class="num">16</text>
+  <line x1="310" y1="919" x2="510" y2="919" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="897" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="909" class="msg">&#x4FDD;&#x5B58;&#x4F5C;&#x7B54;&#xFF1B;&#x670D;&#x52A1;&#x7AEF;&#x8BFB;&#x53D6;&#x7B54;&#x6848;&#x548C;&#x6765;&#x6E90;</text>
+  <circle cx="324" cy="962" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="965" class="num">17</text>
+  <line x1="310" y1="962" x2="710" y2="962" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="940" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="952" class="msg">&#x8BF7;&#x6C42;&#x8BC4;&#x4EF7;&#x56DE;&#x7B54;</text>
+  <circle cx="696" cy="1005" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="1008" class="num">18</text>
+  <line x1="710" y1="1005" x2="310" y2="1005" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="983" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="995" class="msg">&#x53CD;&#x9988;&#x6216;&#x9009;&#x9879;&#x89E3;&#x91CA;&#x3001;&#x9519;&#x8BEF;&#x4E0E;&#x4F9D;&#x636E;</text>
+  <circle cx="324" cy="1048" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1051" class="num">19</text>
+  <line x1="310" y1="1048" x2="1090" y2="1048" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1026" width="740" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="700" y="1038" class="msg">&#x9884;&#x89C8;&#x56DB;&#x6863;&#x8BC4;&#x5206;&#x95F4;&#x9694;</text>
+  <circle cx="1076" cy="1091" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="1076" y="1094" class="num">20</text>
+  <line x1="1090" y1="1091" x2="310" y2="1091" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="1069" width="740" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="700" y="1081" class="msg">&#x8FD4;&#x56DE;&#x9884;&#x8BA1;&#x590D;&#x4E60;&#x65F6;&#x95F4;</text>
+  <circle cx="296" cy="1134" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="1137" class="num">21</text>
+  <line x1="310" y1="1134" x2="110" y2="1134" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="1112" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1124" class="msg">&#x63ED;&#x793A;&#x7B54;&#x6848;&#x3001;&#x53CD;&#x9988;&#x548C;&#x95F4;&#x9694;&#x9884;&#x89C8;</text>
+  <circle cx="124" cy="1177" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="1180" class="num">22</text>
+  <line x1="110" y1="1177" x2="310" y2="1177" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="1155" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1167" class="msg">&#x9009;&#x62E9;&#x5FD8;&#x8BB0; / &#x56F0;&#x96BE; / &#x826F;&#x597D; / &#x5BB9;&#x6613;</text>
+  <circle cx="324" cy="1220" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1223" class="num">23</text>
+  <line x1="310" y1="1220" x2="1090" y2="1220" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1198" width="740" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="700" y="1210" class="msg">&#x63D0;&#x4EA4;&#x771F;&#x5B9E;&#x65F6;&#x95F4;&#x3001;&#x72B6;&#x6001;&#x548C;&#x7528;&#x6237;&#x8BC4;&#x5206;</text>
+  <circle cx="1076" cy="1263" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="1076" y="1266" class="num">24</text>
+  <line x1="1090" y1="1263" x2="310" y2="1263" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="1241" width="740" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="700" y="1253" class="msg">&#x8FD4;&#x56DE;&#x65B0;&#x72B6;&#x6001;&#x4E0E;&#x5230;&#x671F;&#x65F6;&#x95F4;</text>
+  <circle cx="324" cy="1306" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1309" class="num">25</text>
+  <line x1="310" y1="1306" x2="510" y2="1306" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1284" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="1296" class="msg">&#x4E8B;&#x52A1;&#x4FDD;&#x5B58;&#x65E5;&#x5FD7;&#x4E0E;&#x95EE;&#x7B54;&#x5361;&#x72B6;&#x6001;</text>
+  <rect x="25" y="1353" width="1150" height="34" rx="5" fill="rgba(30,41,59,0.9)" stroke="#475569"/>
+  <text x="45" y="1375" class="phase">03  &#x72EC;&#x7ACB;&#x6D41;&#x7A0B; B&#xFF1A;&#x7528;&#x6237;&#x9009;&#x62E9;&#x65F6;&#x95F4; &#x2192; &#x8D39;&#x66FC;&#x89E3;&#x91CA; &#x2192; &#x7406;&#x89E3;&#x53CD;&#x9988;&#xFF08;&#x4F4E;&#x9891;&#x53EF;&#x9009;&#xFF09;</text>
+  <circle cx="124" cy="1425" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="1428" class="num">26</text>
+  <line x1="110" y1="1425" x2="310" y2="1425" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="1403" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1415" class="msg">&#x4E3B;&#x52A8;&#x5F00;&#x59CB; / &#x6253;&#x5F00;&#x5DF2;&#x5B89;&#x6392;&#x4EFB;&#x52A1; / &#x63A5;&#x53D7;&#x5EFA;&#x8BAE;</text>
+  <circle cx="324" cy="1468" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1471" class="num">27</text>
+  <line x1="310" y1="1468" x2="510" y2="1468" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1446" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="1458" class="msg">&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#x5361;&#x7247;&#x3001;&#x6982;&#x5FF5;&#x548C;&#x5386;&#x53F2;&#x7F3A;&#x53E3;</text>
+  <circle cx="296" cy="1511" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="1514" class="num">28</text>
+  <line x1="310" y1="1511" x2="110" y2="1511" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="1489" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1501" class="msg">&#x8BF7;&#x5148;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x8BDD;&#x89E3;&#x91CA;</text>
+  <circle cx="124" cy="1554" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="1557" class="num">29</text>
+  <line x1="110" y1="1554" x2="310" y2="1554" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="1532" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1544" class="msg">&#x63D0;&#x4EA4;&#x9996;&#x6B21;&#x89E3;&#x91CA;</text>
+  <circle cx="324" cy="1597" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1600" class="num">30</text>
+  <line x1="310" y1="1597" x2="510" y2="1597" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1575" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="1587" class="msg">&#x4FDD;&#x5B58;&#x9996;&#x6B21;&#x89E3;&#x91CA;</text>
+  <circle cx="324" cy="1640" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1643" class="num">31</text>
+  <line x1="310" y1="1640" x2="710" y2="1640" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1618" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="1630" class="msg">&#x63D0;&#x4EA4;&#x89E3;&#x91CA;&#x3001;&#x6765;&#x6E90;&#x548C;&#x5B66;&#x751F;&#x6A21;&#x5F0F;&#x89C4;&#x5219;</text>
+  <circle cx="696" cy="1683" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="1686" class="num">32</text>
+  <line x1="710" y1="1683" x2="310" y2="1683" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="1661" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="1673" class="msg">&#x9488;&#x5BF9;&#x5F53;&#x524D;&#x7F3A;&#x53E3;&#x63D0;&#x51FA;&#x4E00;&#x4E2A;&#x8FFD;&#x95EE;</text>
+  <circle cx="296" cy="1726" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="1729" class="num">33</text>
+  <line x1="310" y1="1726" x2="110" y2="1726" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="1704" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1716" class="msg">&#x5C55;&#x793A;&#x8FFD;&#x95EE;</text>
+  <circle cx="124" cy="1769" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="1772" class="num">34</text>
+  <line x1="110" y1="1769" x2="310" y2="1769" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="1747" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1759" class="msg">&#x56DE;&#x7B54;&#x8FFD;&#x95EE;&#x5E76;&#x8865;&#x5145;&#x89E3;&#x91CA;</text>
+  <circle cx="324" cy="1812" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1815" class="num">35</text>
+  <line x1="310" y1="1812" x2="510" y2="1812" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1790" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="1802" class="msg">&#x4FDD;&#x5B58;&#x672C;&#x8F6E;&#x5BF9;&#x8BDD;</text>
+  <circle cx="324" cy="1855" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="1858" class="num">36</text>
+  <line x1="310" y1="1855" x2="710" y2="1855" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="1833" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="1845" class="msg">&#x603B;&#x7ED3;&#x7406;&#x89E3;&#x7F3A;&#x53E3;</text>
+  <circle cx="696" cy="1898" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="1901" class="num">37</text>
+  <line x1="710" y1="1898" x2="310" y2="1898" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="1876" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="1888" class="msg">&#x9519;&#x8BEF;&#x3001;&#x6A21;&#x7CCA;&#x5904;&#x548C;&#x9057;&#x6F0F;&#x8054;&#x7CFB;</text>
+  <circle cx="296" cy="1941" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="1944" class="num">38</text>
+  <line x1="310" y1="1941" x2="110" y2="1941" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="1919" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1931" class="msg">&#x5C55;&#x793A;&#x53CD;&#x9988;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x89E3;&#x91CA;</text>
+  <circle cx="124" cy="1984" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="1987" class="num">39</text>
+  <line x1="110" y1="1984" x2="310" y2="1984" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="1962" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="1974" class="msg">&#x63D0;&#x4EA4;&#x4FEE;&#x8BA2;&#x89E3;&#x91CA;</text>
+  <circle cx="324" cy="2027" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2030" class="num">40</text>
+  <line x1="310" y1="2027" x2="510" y2="2027" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2005" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="2017" class="msg">&#x4FDD;&#x5B58;&#x4FEE;&#x8BA2;&#x548C;&#x7F3A;&#x53E3;</text>
+  <circle cx="296" cy="2070" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="2073" class="num">41</text>
+  <line x1="310" y1="2070" x2="110" y2="2070" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="2048" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2060" class="msg">&#x9009;&#x62E9;&#x7ED3;&#x675F; / &#x5B89;&#x6392;&#x4E0B;&#x6B21; / &#x751F;&#x6210;&#x8865;&#x5145;&#x95EE;&#x7B54;&#x5361;</text>
+  <rect x="25" y="2117" width="1150" height="34" rx="5" fill="rgba(30,41,59,0.9)" stroke="#475569"/>
+  <text x="45" y="2139" class="phase">04  &#x4E24;&#x4E2A;&#x6D41;&#x7A0B;&#x7684;&#x53EF;&#x9009;&#x8FDE;&#x63A5;&#xFF08;&#x5747;&#x9700;&#x7528;&#x6237;&#x51B3;&#x5B9A;&#xFF09;</text>
+  <circle cx="296" cy="2189" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="2192" class="num">42</text>
+  <line x1="310" y1="2189" x2="110" y2="2189" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="2167" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2179" class="msg">&#x95EE;&#x7B54;&#x5361;&#x591A;&#x6B21;&#x56F0;&#x96BE;&#xFF1A;&#x5EFA;&#x8BAE;&#x8D39;&#x66FC;&#x7EC3;&#x4E60;</text>
+  <circle cx="124" cy="2232" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="2235" class="num">43</text>
+  <line x1="110" y1="2232" x2="310" y2="2232" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="2210" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2222" class="msg">&#x73B0;&#x5728;&#x5F00;&#x59CB; / &#x7A0D;&#x540E;&#x5B89;&#x6392; / &#x5FFD;&#x7565;</text>
+  <circle cx="324" cy="2275" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2278" class="num">44</text>
+  <line x1="310" y1="2275" x2="510" y2="2275" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2253" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="2265" class="msg">&#x4EC5;&#x5728;&#x201C;&#x7A0D;&#x540E;&#x5B89;&#x6392;&#x201D;&#x65F6;&#x521B;&#x5EFA;&#x6DF1;&#x5EA6;&#x7EC3;&#x4E60;&#x8BA1;&#x5212;</text>
+  <circle cx="296" cy="2318" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="2321" class="num">45</text>
+  <line x1="310" y1="2318" x2="110" y2="2318" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="2296" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2308" class="msg">&#x8D39;&#x66FC;&#x53D1;&#x73B0;&#x7F3A;&#x53E3;&#xFF1A;&#x8BE2;&#x95EE;&#x662F;&#x5426;&#x751F;&#x6210;&#x95EE;&#x7B54;&#x5361;</text>
+  <circle cx="124" cy="2361" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="2364" class="num">46</text>
+  <line x1="110" y1="2361" x2="310" y2="2361" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="2339" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2351" class="msg">&#x9009;&#x62E9;&#x751F;&#x6210;&#x8865;&#x5145;&#x95EE;&#x7B54;&#x5361;</text>
+  <circle cx="324" cy="2404" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2407" class="num">47</text>
+  <line x1="310" y1="2404" x2="710" y2="2404" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2382" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="2394" class="msg">&#x6309;&#x9009;&#x5B9A;&#x7F3A;&#x53E3;&#x751F;&#x6210;&#x95EE;&#x7B54;&#x5361;&#x8349;&#x7A3F;</text>
+  <circle cx="696" cy="2447" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="2450" class="num">48</text>
+  <line x1="710" y1="2447" x2="310" y2="2447" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="2425" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="2437" class="msg">&#x8FD4;&#x56DE;&#x9898;&#x578B;&#x3001;&#x7B54;&#x6848;&#x3001;&#x9009;&#x9879;&#x548C;&#x6765;&#x6E90;&#x4F9D;&#x636E;</text>
+  <circle cx="296" cy="2490" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="2493" class="num">49</text>
+  <line x1="310" y1="2490" x2="110" y2="2490" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="2468" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2480" class="msg">&#x5C55;&#x793A;&#x8349;&#x7A3F;&#x4F9B;&#x5BA1;&#x6838;</text>
+  <circle cx="124" cy="2533" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="2536" class="num">50</text>
+  <line x1="110" y1="2533" x2="310" y2="2533" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="2511" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2523" class="msg">&#x7F16;&#x8F91;&#x5E76;&#x786E;&#x8BA4;</text>
+  <circle cx="324" cy="2576" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2579" class="num">51</text>
+  <line x1="310" y1="2576" x2="510" y2="2576" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2554" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="2566" class="msg">&#x53D1;&#x5E03;&#x8865;&#x5145;&#x95EE;&#x7B54;&#x5361;</text>
+  <circle cx="324" cy="2619" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2622" class="num">52</text>
+  <line x1="310" y1="2619" x2="1090" y2="2619" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2597" width="740" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="700" y="2609" class="msg">&#x521D;&#x59CB;&#x5316;&#x72EC;&#x7ACB; FSRS &#x72B6;&#x6001;</text>
+  <circle cx="1076" cy="2662" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="1076" y="2665" class="num">53</text>
+  <line x1="1090" y1="2662" x2="310" y2="2662" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="2640" width="740" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="700" y="2652" class="msg">&#x8FD4;&#x56DE;&#x521D;&#x59CB;&#x5B66;&#x4E60;&#x72B6;&#x6001;</text>
+  <circle cx="324" cy="2705" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2708" class="num">54</text>
+  <line x1="310" y1="2705" x2="510" y2="2705" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2683" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="2695" class="msg">&#x4FDD;&#x5B58;&#x8C03;&#x5EA6;&#x72B6;&#x6001;</text>
+  <rect x="25" y="2752" width="1150" height="34" rx="5" fill="rgba(30,41,59,0.9)" stroke="#475569"/>
+  <text x="45" y="2774" class="phase">05  Grok Bot &#x670D;&#x52A1;&#x5F02;&#x5E38;&#x65F6;&#x964D;&#x7EA7;</text>
+  <circle cx="324" cy="2824" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2827" class="num">55</text>
+  <line x1="310" y1="2824" x2="710" y2="2824" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2802" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="2814" class="msg">&#x53D1;&#x9001;&#x5E26; request_id &#x7684;&#x8BF7;&#x6C42;</text>
+  <circle cx="696" cy="2867" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="2870" class="num">56</text>
+  <line x1="710" y1="2867" x2="310" y2="2867" stroke="#fb7185" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrow-rose)"/>
+  <rect x="330" y="2845" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="2857" class="msg">&#x8D85;&#x65F6;&#x6216;&#x670D;&#x52A1;&#x9519;&#x8BEF;</text>
+  <circle cx="324" cy="2910" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="2913" class="num">57</text>
+  <line x1="310" y1="2910" x2="510" y2="2910" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="2888" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="2900" class="msg">&#x4FDD;&#x5B58;&#x5931;&#x8D25;&#x72B6;&#x6001;&#x3001;&#x8F93;&#x5165;&#x7248;&#x672C;&#x548C;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</text>
+  <circle cx="296" cy="2953" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="296" y="2956" class="num">58</text>
+  <line x1="310" y1="2953" x2="110" y2="2953" stroke="#34d399" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="130" y="2931" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2943" class="msg">&#x5141;&#x8BB8;&#x91CD;&#x8BD5;&#x6216;&#x624B;&#x5DE5;&#x7EE7;&#x7EED;</text>
+  <circle cx="124" cy="2996" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="124" y="2999" class="num">59</text>
+  <line x1="110" y1="2996" x2="310" y2="2996" stroke="#22d3ee" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="130" y="2974" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="210" y="2986" class="msg">&#x9009;&#x62E9;&#x91CD;&#x8BD5;</text>
+  <circle cx="324" cy="3039" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="3042" class="num">60</text>
+  <line x1="310" y1="3039" x2="710" y2="3039" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="3017" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="3029" class="msg">&#x4F7F;&#x7528;&#x540C;&#x4E00; request_id &#x91CD;&#x8BD5;</text>
+  <circle cx="696" cy="3082" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="696" y="3085" class="num">61</text>
+  <line x1="710" y1="3082" x2="310" y2="3082" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-open)"/>
+  <rect x="330" y="3060" width="360" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="510" y="3072" class="msg">&#x8FD4;&#x56DE;&#x7ED3;&#x6784;&#x5316;&#x7ED3;&#x679C;&#x4E0E;&#x6A21;&#x578B;&#x7248;&#x672C;</text>
+  <circle cx="324" cy="3125" r="9" fill="#172554" stroke="#60a5fa"/>
+  <text x="324" y="3128" class="num">62</text>
+  <line x1="310" y1="3125" x2="510" y2="3125" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="330" y="3103" width="160" height="17" rx="3" fill="#0f172a" opacity="0.96"/>
+  <text x="410" y="3115" class="msg">&#x5E42;&#x7B49;&#x66F4;&#x65B0;&#x539F;&#x4EFB;&#x52A1;</text>
+  <rect x="33" y="67" width="154" height="45" rx="6" fill="#0f172a"/>
+  <rect x="33" y="67" width="154" height="45" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="110" y="95" class="actor">&#x7528;&#x6237;</text>
+  <rect x="33" y="3208" width="154" height="34" rx="6" fill="#0f172a"/>
+  <rect x="33" y="3208" width="154" height="34" rx="6" fill="rgba(8,51,68,0.4)" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="110" y="3230" class="actor">&#x7528;&#x6237;</text>
+  <rect x="233" y="67" width="154" height="45" rx="6" fill="#0f172a"/>
+  <rect x="233" y="67" width="154" height="45" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="310" y="95" class="actor">&#x5E94;&#x7528;&#x7EC4;&#x4EF6;</text>
+  <rect x="233" y="3208" width="154" height="34" rx="6" fill="#0f172a"/>
+  <rect x="233" y="3208" width="154" height="34" rx="6" fill="rgba(6,78,59,0.4)" stroke="#34d399" stroke-width="1.2"/>
+  <text x="310" y="3230" class="actor">&#x5E94;&#x7528;&#x7EC4;&#x4EF6;</text>
+  <rect x="433" y="67" width="154" height="45" rx="6" fill="#0f172a"/>
+  <rect x="433" y="67" width="154" height="45" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="510" y="95" class="actor">&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;</text>
+  <rect x="433" y="3208" width="154" height="34" rx="6" fill="#0f172a"/>
+  <rect x="433" y="3208" width="154" height="34" rx="6" fill="rgba(76,29,149,0.4)" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="510" y="3230" class="actor">&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;</text>
+  <rect x="633" y="67" width="154" height="45" rx="6" fill="#0f172a"/>
+  <rect x="633" y="67" width="154" height="45" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="710" y="95" class="actor">Grok Bot &#x670D;&#x52A1;</text>
+  <rect x="633" y="3208" width="154" height="34" rx="6" fill="#0f172a"/>
+  <rect x="633" y="3208" width="154" height="34" rx="6" fill="rgba(120,53,15,0.3)" stroke="#fbbf24" stroke-width="1.2"/>
+  <text x="710" y="3230" class="actor">Grok Bot &#x670D;&#x52A1;</text>
+  <rect x="833" y="67" width="154" height="45" rx="6" fill="#0f172a"/>
+  <rect x="833" y="67" width="154" height="45" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="910" y="95" class="actor">&#x5B66;&#x4E60;&#x89C4;&#x5219;&#x7EC4;&#x4EF6;</text>
+  <rect x="833" y="3208" width="154" height="34" rx="6" fill="#0f172a"/>
+  <rect x="833" y="3208" width="154" height="34" rx="6" fill="rgba(59,130,246,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="910" y="3230" class="actor">&#x5B66;&#x4E60;&#x89C4;&#x5219;&#x7EC4;&#x4EF6;</text>
+  <rect x="1013" y="67" width="154" height="45" rx="6" fill="#0f172a"/>
+  <rect x="1013" y="67" width="154" height="45" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="1090" y="95" class="actor">FSRS &#x670D;&#x52A1;</text>
+  <rect x="1013" y="3208" width="154" height="34" rx="6" fill="#0f172a"/>
+  <rect x="1013" y="3208" width="154" height="34" rx="6" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="1090" y="3230" class="actor">FSRS &#x670D;&#x52A1;</text>
+  <rect x="25" y="3255" width="1150" height="28" rx="5" fill="rgba(136,19,55,0.22)" stroke="#fb7185"/>
+  <text x="600" y="3273" text-anchor="middle" class="note">&#x8FB9;&#x754C;&#xFF1A;&#x7EC4;&#x4EF6;&#x7F16;&#x6392;&#x4EA7;&#x54C1;&#x6D41;&#x7A0B;&#xFF1B;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x72EC;&#x7ACB;&#x80FD;&#x529B;&#xFF1B;&#x95EE;&#x7B54;&#x5361;&#x590D;&#x4E60;&#x4E0E;&#x6DF1;&#x5EA6;&#x7EC3;&#x4E60;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x4E32;&#x8054;&#x3002;</text>
+</svg>
