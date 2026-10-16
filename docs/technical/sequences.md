@@ -23,7 +23,7 @@ sequenceDiagram
     A->>G: 创建材料生成任务
     G->>K: 加载概念提取、出题及来源约束
     K-->>G: 返回结构和质量规则
-    G-->>A: 返回概念、两类问答卡、开放题、摘要及来源引用
+    G-->>A: 返回概念、两类问答卡、开放题、摘要及来源引用（MVP：启发式或 draft-import）
     A->>A: 校验结构、数量和来源引用
     alt 输出有效
         A->>D: 保存为草稿，答案标记为隐藏
@@ -77,53 +77,53 @@ sequenceDiagram
     A->>D: 事务保存日志、状态及同源问答卡暂缓
     D-->>A: 保存成功
     opt 该概念近期多次忘记或困难
-        A-->>U: 建议费曼练习：现在开始、稍后安排或忽略
+        A-->>U: （目标）建议讲解追问：现在开始、稍后安排或忽略；MVP 未做此建议流
         U->>A: 选择处理方式
-        A->>D: 仅在选择稍后安排时创建深度练习计划
+        A->>D: （目标）仅在选择稍后安排时记录理解练习计划；MVP 无 DeepPracticeSchedule
     end
     A-->>U: 展示下一题或会话结果
 ```
 
-## 3. 摘要重写与开放式问题
+## 3. 概括对照与理解问答
 
 ```mermaid
 sequenceDiagram
     actor U as 用户
-    participant A as 深度练习组件
+    participant A as 理解练习组件
     participant D as 数据库服务
     participant G as Grok Bot 服务
 
     U->>A: 选择卡片集或内容卡片的理解练习
     A->>D: 读取阅读输入与未完成练习
-    D-->>A: 返回开放题和隐藏参考内容
-    A-->>U: 展示题目或摘要任务，不展示参考答案
-    U->>A: 提交开放题回答或自写摘要
+    D-->>A: 返回 open_questions 与隐藏 content_summaries
+    A-->>U: 展示理解问答或概括对照任务，不展示参考
+    U->>A: 提交理解问答回答或自写概括
     A->>D: 保存用户原始版本
     A->>G: 提交回答、评价维度和来源
     G-->>A: 返回概念、因果、证据、应用和边界反馈
-    A-->>U: 展示反馈、来源和 Grok Bot 参考摘要
+    A-->>U: 展示反馈、摘录和参考摘要（MVP：规则 stub）
     U->>A: 提交修订版本
     A->>D: 保存修订、未解决缺口和下次练习日期
     D-->>A: 保存成功
     A-->>U: 显示本次理解练习结果
 ```
 
-## 4. 可选费曼解释与薄弱点回流
+## 4. 可选讲解追问与薄弱点回流
 
 ```mermaid
 sequenceDiagram
     actor U as 用户
-    participant A as 深度练习组件
+    participant A as 理解练习组件
     participant D as 数据库服务
     participant G as Grok Bot 服务
     participant F as FSRS 服务
 
     alt 用户主动开始
-        U->>A: 从卡片集、内容卡片或概念页开始费曼练习
+        U->>A: 口令「讲解追问」，从卡片集、内容卡片或概念开始
     else 用户处理系统建议
         U->>A: 选择现在开始
     else 用户打开已安排任务
-        U->>A: 从深度练习队列开始
+        U->>A: 从理解练习入口开始（MVP：显式 CLI/口令）
     end
     A->>D: 读取概念、来源和历史缺口
     D-->>A: 返回练习上下文
@@ -168,17 +168,17 @@ sequenceDiagram
     par 问答卡复习队列
         A->>F: 查询 FSRS 到期问答卡
         F-->>A: 返回今日问答卡
-    and 深度练习队列
-        A->>D: 查询用户已安排的费曼、开放题和摘要任务
-        D-->>A: 返回今日深度练习
+    and 理解练习汇总
+        A->>D: 查询 open_questions / content_summaries / feynman_sessions 状态
+        D-->>A: 返回今日理解练习汇总
     end
     A-->>U: 分区展示两条队列
     U->>A: 自主选择进入其中一条
     opt 问答卡多次回想困难
-        A-->>U: 建议费曼练习
+        A-->>U: （目标）建议讲解追问；MVP 未做
         U->>A: 现在开始、稍后安排或忽略
     end
-    opt 费曼练习发现值得长期记忆的缺口
+    opt 讲解追问发现值得长期记忆的缺口
         A-->>U: 询问是否生成补充问答卡
         U->>A: 确认后加入 FSRS 队列
     end

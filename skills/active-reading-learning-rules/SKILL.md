@@ -11,7 +11,7 @@ description: Use when Grok Bot generates or evaluates active-reading materials, 
 
 本 Skill 不执行数据库写入、通知、用户记忆评分或 FSRS 排期。所有生成内容都是草稿；发布、作废和调度由应用组件与服务处理。
 
-用户侧口令「新建卡片」= 将原始输入入库为 ContentCard（原料）；本 Skill 的 `generate_materials` 仍只产出草稿，不代替发布。应用层用选择卡片（widget）收集用户四档评分；`evaluate_*` 不输出忘记/困难/良好/容易。费曼（`feynman_tutor`）与深度练习（`evaluate_deep_practice`）模式路由保持独立。
+用户侧口令「新建卡片」= 将原始输入入库为 ContentCard（原料）；本 Skill 的 `generate_materials` 仍只产出草稿，不代替发布。应用层用选择卡片（widget）收集用户四档评分；`evaluate_*` 不输出忘记/困难/良好/容易。讲解追问（`feynman_tutor`）与理解练习评阅（`evaluate_deep_practice`，对应概括对照/理解问答）模式路由保持独立。mode 名保留英文。
 
 ## 输入原则
 
@@ -25,10 +25,10 @@ description: Use when Grok Bot generates or evaluates active-reading materials, 
 
 | mode | 使用场景 | 结果 |
 |---|---|---|
-| `generate_materials` | 用户提交阅读输入后 | 概念、问答卡、开放题和摘要草稿 |
+| `generate_materials` | 用户提交阅读输入后 | 概念、问答卡、开放题和摘要草稿（供理解问答/概括对照） |
 | `evaluate_review_answer` | 用户回答问答式或选择题后 | 正确处、遗漏、错误和依据 |
-| `evaluate_deep_practice` | 用户完成开放题或摘要重写后 | 理解反馈和修订方向 |
-| `feynman_tutor` | 用户主动开始费曼练习后 | 单轮追问、诊断或结束总结 |
+| `evaluate_deep_practice` | 用户完成理解问答或概括对照后 | 理解反馈和修订方向（实现侧可为规则 stub） |
+| `feynman_tutor` | 用户口令「讲解追问」后 | 单轮追问、诊断或结束总结（实现侧可为启发式） |
 | `generate_supplemental_cards` | 用户确认要针对缺口补卡后 | 补充问答卡草稿 |
 
 ## 生成学习材料
@@ -55,11 +55,11 @@ description: Use when Grok Bot generates or evaluates active-reading materials, 
 
 执行 `evaluate_deep_practice` 时，按概念准确性、因果联系、证据、迁移和适用边界反馈。不要用单一总分代替具体说明。该模式与 `feynman_tutor` 独立路由，不得混用或自动串联。
 
-## 费曼练习
+## 讲解追问（原费曼）
 
 执行 `feynman_tutor` 时：
 
-1. 用户首次解释前，不提供标准答案、摘要或提示。
+1. 用户首次解释前，不提供标准答案、参考摘要或提示。
 2. 以学生身份一次只追问一个最关键的模糊点，优先追问术语、因果、例子、边界或反例。
 3. 用户回答后再判断当前缺口是否解决；未解决时继续针对该缺口追问。
 4. 诊断必须区分错误、模糊、推理跳步和遗漏联系，并附来源。

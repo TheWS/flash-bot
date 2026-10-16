@@ -1,6 +1,6 @@
 # 输入输出契约
 
-> 术语对齐：用户口令「新建卡片」= ContentCard 入库；本契约中的 `generate_materials` 等模式只产出草稿。`evaluate_review_answer` 不包含四档评分字段——评分由应用层 widget 收集。费曼与深度练习为独立 `mode`。
+> 术语对齐：用户口令「新建卡片」= ContentCard 入库；本契约中的 `generate_materials` 等模式只产出草稿。`evaluate_review_answer` 不包含四档评分字段——评分由应用层 widget 收集。讲解追问（`feynman_tutor`）与理解练习评阅（`evaluate_deep_practice`）为独立 `mode`。
 
 ## 通用请求
 
