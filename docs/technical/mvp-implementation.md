@@ -61,7 +61,7 @@
 
 `review.py sets` 展示 **还剩 remaining_due / total_active**：
 
-- **x（还剩）**：该集今日到期或已到期、可立刻抽出的活跃问答卡数（未挂起）。
+- **x（还剩）**：该集今日未学习（含已过点）、可立刻抽出的活跃问答卡数（未挂起）。
 - **全部**：该集未挂起的活跃问答卡总数。
 
 ## 会话结束：SESSION_COMPLETE vs SESSION_ABORTED
